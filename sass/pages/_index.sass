@@ -1,0 +1,101 @@
+/*--- PAGE INDEX ----*/
+.main>.container:first-child>.row:first-child
+    position: relative
+.currency
+    position: absolute
+    top: 192px
+    right: 0
+    width: 200px
+    z-index: 1500
+    & h3
+        font-size: 12px
+        font-weight: 900
+        margin: 20px 0 10px
+    &__date
+        display: block
+        font-weight: 500
+        margin-top: 5px
+    &__on
+        display: none
+    &__column
+        & p
+            font-size: 14px
+            font-weight: 900
+            padding: 18px 0 15px
+            margin: 0
+            box-shadow: 0 2px 0 0 #eee, 0 3px 0 0 #fafafa
+            & span
+                float: right
+.time
+    position: absolute
+    top: 192px
+    left: 0
+    width: 200px
+    text-align: center
+    padding: 0 15px
+    z-index: 1500
+    & h3
+        font-size: 12px
+        font-weight: 900
+        margin: 20px 0 30px
+    &__Vladivostok, &__Moscow
+        font-size: 28px
+    &__Vladivostok
+        margin-bottom: 22px
+        box-shadow: 0 2px 0 0 #eee, 0 3px 0 0 #fafafa
+    &__city
+        display: block
+        font-size: 12px
+        font-weight: 700
+        color: $color-dark-blue
+        padding: 10px 0 15px        
+    &__hours, &__minutes
+        display: inline-block
+        width: 54px
+        height: 45px
+        line-height: 45px
+        border-radius: 4px
+        background: #eaeaea
+        text-align: center
+        font-weight: 300
+        vertical-align: middle
+        margin: 0 5px
+    
+.our-mission
+    color: #fff
+    &__wr
+        display: flex
+        flex-direction: row-reverse
+        background: $color-blue
+        & img
+            width: 384px
+            height: 324px
+    &__content
+        padding: 25px 10px 0 20px
+        & h2
+            font-size: 26px
+            font-weight: 400
+            letter-spacing: 0.018em;
+            margin: 0 0 24px 0
+        & .mission__description
+            line-height: 21px
+            margin-bottom: 24px
+        & ul
+            list-style: none
+            padding-left: 0
+            & li
+                margin-bottom: 17px
+                &:before
+                    content: '•'
+.main__activity                  
+    padding-top: 48px
+.main__activity p
+    padding: 0 40px
+.main__bottom h2
+    text-transform: uppercase
+    font-size: 31px
+    font-weight: 400
+    text-align: center
+    letter-spacing: 0.02em
+    margin: 10px 0 40px
+        

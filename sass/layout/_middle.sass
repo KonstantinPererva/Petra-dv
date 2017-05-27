@@ -1,0 +1,39 @@
+/*--- MAIN ---*/
+.main__content
+    text-align: center
+    padding-top: 34px
+    padding-bottom: 6px
+    & h2
+        font-size: 31px
+        line-height: 31px
+        letter-spacing: 0.024em
+        text-transform: uppercase
+        font-weight: 400
+        margin: 0
+        &:after
+            content: ''
+            display: block
+            width: 140px
+            border-bottom: 2px solid #7f7f7f
+            margin: 15px auto
+    & p
+        letter-spacing: 0.005em;
+        line-height: 22px
+        padding: 0 10px
+        margin-bottom: 30px
+.main__nav-sequence
+    background: $color-dark-gray
+    margin: 0 -15px
+    padding: 4px 15px
+    & ul
+        margin: 0
+        & li
+            font-size: 14px
+            padding: 8px 0
+            & + li:before
+                content: '—'
+                margin-right: 3px
+            & a
+                text-decoration: underline
+                &:hover
+                    text-decoration: none

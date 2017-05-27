@@ -1,0 +1,276 @@
+@media screen and (max-width: 767px)
+    body
+        background: url(../img/bg-body-768.jpg) no-repeat
+        background-size: cover
+    .main__nav-sequence
+        display: none
+    .slick-dotted.slick-slider
+        margin-bottom: -1px
+    .currency
+        margin: 0
+    .slider-1 .slick-prev, & .slick-next
+        display: none !important
+    .slider-1 .slick-dots li
+        margin: 0 3px
+    .main__content
+        padding-top: 34px
+        padding-bottom: 6px
+        & h2
+            font-size: 23px
+        & p
+            padding: 0
+    .main__activity p
+        padding: 0
+    .our-mission
+        padding: 0
+        background: $color-blue
+        &__wr
+            & img
+                width: 220px
+                height: 186px
+                margin-right: 15px
+        &__content
+            padding: 25px 20px 0 15px
+            & h2
+                font-size: 23px
+            & .mission__description
+                font-size: 13px
+            & ul
+                margin-bottom: 30px
+    .main__bottom h2
+        font-size: 23px
+        font-weight: 400
+        margin: 0 0 30px
+    .line-white:before
+        top: 0
+        left: 15px
+        right: 15px
+        margin: auto
+        height: 1px
+        border-bottom: 1px solid $color-purple
+        border-left: 0
+    .header__menu
+        display: none
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 2000
+        width: 100%
+        height: inherit
+        background: $color-dark-blue
+        & ul
+            display: block
+            width: 100%
+            padding-bottom: 15px
+            & li
+                display: block
+                padding: 0 20px 0 15px
+                &:hover, &.active
+                    box-shadow: -1px 0 3px #444
+                & a
+                    height: 56px
+                    line-height: 56px
+                    font-size: 16px
+                    text-align: left
+                    padding-left: 25px
+                    & .menu__caret
+                        display: block
+    .photogallery
+        &__images
+            text-align: center
+            font-size: 0
+            & img
+                float: none
+                display: inline-block
+                vertical-align: bottom
+                margin-bottom: 12px
+                &:nth-child(even)
+                    margin-right: 0
+                &:nth-child(odd)
+                    margin-right: 10px
+    .contacts__address, .form-feedback, .map
+        flex: 1 100%
+        text-align: center
+    .contacts__address
+        padding: 0 0 30px
+    .form-feedback
+        max-width: 450px
+        padding: 0 10px
+        margin: 30px auto 50px
+    .wr-form
+        order: 3
+        width: 100%
+        background: $color-dark-gray
+        margin: 0 -15px
+        padding-right: 0
+    .wr-address
+        margin: 0
+    .map
+        margin: 0 -15px
+    .list-services
+        &:first-child
+            margin-top: 20px
+        &:last-child
+            margin-bottom: 20px
+        & ul
+            margin: 0 10px
+            & li
+                & a
+                    font-size: 16px
+                    line-height: 19px
+                & p
+                    font-size: 12px
+@media screen and (max-width: 640px)
+    .slider-1
+        &__content
+            top: 20px
+            height: 190px
+            margin: 0 15px
+            & h2
+                width: 260px
+                font-size: 18px
+                padding: 8px 0 8px 5px
+                margin-top: 25px
+                & span
+                    font-size: 15px
+        & .slick-dots
+            bottom: 17px
+    .our-mission
+        &__wr
+            display: block
+            & img
+                display: block
+                max-width: 384px
+                width: 100%
+                height: auto
+                margin: 25px auto 0
+        &__content
+            padding-right: 15px
+            & h2
+                text-transform: uppercase
+                text-align: center
+                margin: 0
+                &:after
+                    content: ''
+                    display: block
+                    width: 110px
+                    border-top: 1px solid #fff
+                    margin: 15px auto
+    .footer
+        &__bottom
+            display: flex
+            flex-direction: column-reverse
+            padding: 0
+            & span
+                display: block
+                &.footer__tel
+                    display: none
+        &__wr-phone
+            order: 4
+        &__phone:after, &__email:after
+            display: none
+        &__phone
+            font-size: 23px
+        &__email, &__wr-phone
+            margin: 20px 0
+        &__location, &__email
+            font-size: 16px
+        &__privacy-policy
+            font-size: 14px
+            background: #000
+            padding: 10px 0
+    .servicer-trukage__img_right, .servicer-trukage__img_left
+        margin: 25px auto 0
+    .services-description__list li
+        margin-bottom: 20px
+    .servicer-trukage__refinement h2
+        width: 50%
+        font-size: 16px
+        line-height: 20px
+        margin: 35px auto
+        & span
+            font-size: 23px
+    .demanding-services__list li:first-child
+        font-size: 16px
+    .demanding-services__list li + li
+        margin-bottom: 20px
+@media screen and (max-width: 540px)
+    .slider-1
+        &__content
+            height: 160px
+            & h2
+                width: 260px
+                font-size: 18px
+                padding: 8px 0 8px 5px
+                margin-top: 25px
+                & span
+                    font-size: 15px
+        & .slick-dots
+            bottom: 10px
+    .main__content
+        padding-top: 34px
+        padding-bottom: 6px
+        & p
+            font-size: 13px
+            text-align: left
+@media screen and (max-width: 526px)
+    .slider-1
+        &__slade img
+            width: 526px
+            height: 198px
+        &__content
+            height: 160px
+            & h2
+                width: 216px
+                font-size: 15px
+                padding: 8px 0
+                margin-top: 25px
+                & span
+                    font-size: 12px
+        & .slick-dots
+            bottom: 10px
+    .photogallery
+        &__images
+            & img
+                width: 145px
+                height: auto
+@media screen and (max-width: 480px)
+    .servicer-trukage__img_right, .servicer-trukage__img_left
+        margin: 0
+    .servicer-trukage__refinement h2
+        width: 65%
+@media screen and (max-width: 360px)
+    .slider-1__content
+         &:before, &:after
+            width: 33%
+    .our-mission
+        &__wr
+            & img
+                margin: 0 auto
+    .main__bottom h2
+        padding: 0 15px
+    .wr-servicer-trukage__img
+        padding: 0
+    .services-description, .demanding-services
+        padding-left: 0
+        padding-right: 0
+    .servicer-trukage__refinement h2
+        width: 90%
+        & span
+            margin-top: 10px
+@media screen and (max-width: 350px)
+    .slider-1__content
+         &:before, &:after
+            width: 31%
+    .photogallery
+        &__images
+            & img
+                width: 145px
+                height: auto
+                &:nth-child(even)
+                    margin-right: -13px
+                &:nth-child(odd)
+                    margin-right: 6px
+                    margin-left: -13px
+        &__menu-dropdown
+            font-size: 15px

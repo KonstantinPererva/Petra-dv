@@ -1,0 +1,79 @@
+/*-- SLIDER HEADER ---*/
+.slider-1
+    overflow: hidden
+    &__content
+        position: absolute
+        top: 40px
+        left: 0
+        right: 0
+        max-width: 774px
+        height: 288px
+        border-left: 4px solid #fff
+        border-right: 4px solid #fff
+        border-top: 4px solid #fff
+        background-size: 100% 100%
+        margin: 0 10.103%
+        &:before, &:after
+            content: ''
+            position: absolute
+            bottom: 0
+            width: 35.249%
+            border-top: 4px solid #fff
+        &:before
+            left: 0
+        &:after
+            right: 0
+        & h2
+            width: 400px
+            font-size: 25px
+            background: #fff
+            color: $color-dark-blue
+            text-transform: uppercase
+            letter-spacing: 0.019em;
+            padding: 8px 0 8px 38px
+            margin: 37px 0 0 0
+            & span
+                display: block
+                font-size: 20px
+    & .slick-dots
+        bottom: 30px
+        & li
+            border-radius: 50%
+            margin: 0 2px
+            & button
+                border-radius: 50%
+                &:before
+                    content: ''
+                    top: 2px
+                    left: 2px
+                    font-size: 0
+                    width: 16px
+                    height: 16px
+                    background: #fff
+                    border-radius: 50%
+            & button:before
+                opacity: 1
+            &.slick-active button:before
+                opacity: 1
+                background: #fff
+                box-shadow: 0 0 0 2px #8ad9ed
+    & .slick-next, & .slick-prev
+        width: 36px
+        height: 36px
+        z-index: 1
+    & .slick-prev
+        left: 27px
+        background: url(../img/slider/arrow-left.png) no-repeat
+        &:before
+            content: ''
+        &:hover
+            background: url(../img/slider/arrow-left-hover.png) no-repeat
+    & .slick-next
+        right: 27px
+        background: url(../img/slider/arrow-right.png) no-repeat
+        &:before
+            content: ''
+        &:hover
+            background: url(../img/slider/arrow-right-hover.png) no-repeat
+.slick-dotted.slick-slider
+    margin-bottom: 22px

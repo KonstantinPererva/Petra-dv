@@ -1,0 +1,109 @@
+/*----- HEADER ------*/
+.header
+    &__content>div
+        height: 115px
+        padding-left: 0
+        padding-right: 0
+    &__logo
+        position: relative
+        top: 50%
+        transform: translateY(-50%)
+    &__address
+        text-align: right
+        margin-top: 13px
+        & p
+            margin: 0
+            &:first-child
+                font-family: "NeoSansProRegular"
+                font-size: 12px
+                margin-bottom: 4px
+            &.header__phone
+                font-size: 20px
+                font-weight: 700
+    &__menu
+        height: 42px
+        background: $color-dark-blue
+        & ul
+            display: flex
+            font-size: 0
+            margin: 0
+            &.menu__dropdowns
+                width: 100%
+                display: none
+                background: $color-menu-dropdown
+                z-index: 2500
+                margin-left: 20px
+                box-shadow: -1px 0 3px #444
+                & li
+                    &:hover
+                        background: $color-menu-dropdown-active
+                    &.active
+                        background: $color-menu-dropdown-active
+                    & a
+                        height: inherit
+                        font-size: 14px
+                        line-height: 22px
+                        padding: 15px 5px
+            & li
+                position: relative
+                flex-grow: 1
+                &:hover
+                    background: $color-purple
+                    & .menu__caret
+                        border-color: #fff transparent transparent transparent;
+                &.active
+                    background: $color-purple
+                    & .menu__caret
+                        border-color: #fff transparent transparent transparent;
+                & a
+                    display: block
+                    height: 42px
+                    line-height: 42px
+                    font-size: 14px
+                    color: #fff
+                    text-align: center
+                    &:hover, &:active, &:focus
+                        text-decoration: none
+                        color: #fff
+                    & .menu__caret
+                        position: absolute
+                        top: 23px
+                        right: 18px
+                        display: none
+                        width: 0
+                        height: 0
+                        border-style: solid
+                        border-width: 11px 8px 0 8px
+                        border-color: #6163b0 transparent transparent transparent
+    &__btn-menu
+        width: 42px
+        height: 39px
+        border: 1px solid transparent
+        margin-top: 38px
+        cursor: pointer
+        & span
+            display: block
+            width: 40px
+            height: 4px
+            background: $color-dark-blue
+            border-radius: 2px
+            &:first-child
+                margin-top: 11px
+                box-shadow: 0 -11px 0 0 $color-dark-blue
+            &:last-child
+                margin-top: 7px
+                box-shadow: 0 11px 0 0 $color-dark-blue
+.close-menu
+    background: url(../img/close.png) no-repeat center
+    &>span
+        display: none
+        box-shadow: none
+.line-white:before
+    content: ''
+    display: block
+    position: absolute
+    top: 7px
+    left: 0
+    height: 24px
+    border-left: 1px solid #fff
+

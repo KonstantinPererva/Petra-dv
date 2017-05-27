@@ -1,0 +1,52 @@
+/*--- PAGE PHOTOGALERY ---*/
+.photogallery
+    &__menu
+        text-align: center
+        margin-bottom: 40px
+        & ul
+            font-size: 0
+            & li a
+                display: block
+                padding: 6px 15px
+                font-size: 14px
+                font-weight: 700
+                color: #000
+                &:hover,&:active,&:focus
+                    text-decoration: none
+                &:hover
+                    background: $color-purple
+                    color: #fff
+                &.active
+                    background: $color-purple
+                    text-decoration: none
+                    color: #fff
+    &__menu-dropdown
+        display: none
+        position: relative
+        border-radius: 5px
+        border: 1px solid #000
+        font-size: 16px
+        font-weight: 500
+        text-align: left
+        cursor: pointer
+        padding: 12px 14px
+        margin: 10px auto 38px
+        &:after
+            content: ''
+            display: block
+            position: absolute
+            top: 18px
+            right: 18px
+            width: 0
+            height: 0
+            border-style: solid
+            border-width: 11px 8px 0 8px
+            border-color: #000 transparent transparent transparent
+    &__images
+        padding-bottom: 25px
+        & img
+            float: left
+            margin: 0 20px 25px 0
+            vertical-align: bottom
+            &:nth-child(4n)
+                margin-right: 0
